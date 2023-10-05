@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Notes-app</string>
+    <string name="action_add">This is add button</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="image">This is a image</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="upload_txt">Upload an image \n (optional)</string>
+    <string name="save_btn">Save changes</string>
+    <string name="add_image_btn">This is a add image btn</string>
+    <string name="remove_image_btn">Remove image btn</string>
+    <string name="select_color">Select a color</string>
+    <string name="description_edt">Description</string>
+    <string name="description_txt">Description</string>
+    <string name="title_edt">Enter a title</string>
+    <string name="title_txt">Title</string>
+    <string name="add_btn">Add note</string>
+    <string name="next_btn">Next</string>
+    <string name="no_data_txt">No data</string>
+    <string name="note_image_txt">Note image</string>
+    <string name="color_image">Color_image</string>
+</resources>
