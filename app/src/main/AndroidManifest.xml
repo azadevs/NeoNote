@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +15,8 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.MainActivity"
+
+
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

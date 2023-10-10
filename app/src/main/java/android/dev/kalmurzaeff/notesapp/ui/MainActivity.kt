@@ -29,16 +29,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 //        // Set up navController with AppBarConfiguration
         val navigationHost =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navigationHost.navController
-
-        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-        }
 
         binding.navigationView.setupWithNavController(navController)
 
