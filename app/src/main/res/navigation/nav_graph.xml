@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listNoteFragment"
-        android:name="android.dev.kalmurzaeff.notesapp.ui.list.ListNoteFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.list.ListNoteFragment"
         android:label="Notes"
         tools:layout="@layout/fragment_list_notes">
         <action
@@ -26,12 +26,12 @@
     </fragment>
     <fragment
         android:id="@+id/addNoteFragment"
-        android:name="android.dev.kalmurzaeff.notesapp.ui.add.AddNoteFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.add.AddNoteFragment"
         android:label="Add note"
         tools:layout="@layout/fragment_add_note"/>
     <fragment
         android:id="@+id/detailNoteFragment"
-        android:name="android.dev.kalmurzaeff.notesapp.ui.detail.DetailNoteFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.detail.DetailNoteFragment"
         android:label="Detail note"
         tools:layout="@layout/fragment_detail_note">
         <action
@@ -44,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateNoteFragment"
-        android:name="android.dev.kalmurzaeff.notesapp.ui.update.UpdateNoteFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.update.UpdateNoteFragment"
         android:label="Update note"
         tools:layout="@layout/fragment_update_note">
         <action
@@ -59,7 +59,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentOnBoarding"
-        android:name="android.dev.kalmurzaeff.notesapp.ui.onboard.OnBoardFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.onboard.OnBoardFragment"
         android:label="fragment_onboarding"
         tools:layout="@layout/fragment_onboard" >
         <action
@@ -71,12 +71,12 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="android.dev.kalmurzaeff.notesapp.ui.settings.SettingsFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.settings.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/bookmarksFragment"
-        android:name="android.dev.kalmurzaeff.notesapp.ui.bookmark.BookmarksFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.bookmark.BookmarksFragment"
         android:label="Bookmarks"
         tools:layout="@layout/fragment_bookmarks" >
         <action
