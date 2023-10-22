@@ -14,10 +14,9 @@
         android:theme="@style/Theme.Notesapp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.MainActivity"
-
-
+            android:name="android.dev.kalmurzaeff.neonote.ui.MainActivity"
             android:exported="true"
+            android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
