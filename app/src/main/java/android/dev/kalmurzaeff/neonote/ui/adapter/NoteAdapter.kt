@@ -23,21 +23,26 @@ class NoteAdapter(
     inner class NoteViewHolder(private val binding: RowItemNoteBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(noteEntity: NoteEntity) {
-
             binding.apply {
                 rootCardView.setCardBackgroundColor(Color.parseColor(colors()[noteEntity.colorPosition]))
                 tvTitle.text = noteEntity.title
                 descriptionTxt.text = noteEntity.description
-                if (noteEntity.imageUri != null && !TextUtils.isEmpty(noteEntity.imageUri)) {
+
+                /***
+                 * Here's how the image uri couldn't be empty or null.
+                 * If empty or null, we make the imageView invisible.
+                 * If it's not empty, we'll set uri to imageView
+                 */
+                if (validateUri(noteEntity)) {
                     cardView.visibility = View.VISIBLE
                     Glide.with(binding.root.context).load(noteEntity.imageUri).into(binding.ivUser)
                 } else {
                     cardView.visibility = View.INVISIBLE
                 }
+
                 ivSave.setImageResource(if (noteEntity.isSave) R.drawable.ic_bookmark_checked else R.drawable.ic_bookmark_unchecked)
 
                 var bool = noteEntity.isSave
-
                 ivSave.setOnClickListener {
                     bool = if (bool) {
                         ivSave.setImageResource(R.drawable.ic_bookmark_unchecked)
@@ -62,7 +67,6 @@ class NoteAdapter(
         }
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         return NoteViewHolder(
             RowItemNoteBinding.inflate(
@@ -75,6 +79,10 @@ class NoteAdapter(
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         holder.onBind(notes[position])
+    }
+
+    private fun validateUri(noteEntity: NoteEntity): Boolean {
+        return noteEntity.imageUri != null && !TextUtils.isEmpty(noteEntity.imageUri)
     }
 
     fun setData(notes: List<NoteEntity>) {
