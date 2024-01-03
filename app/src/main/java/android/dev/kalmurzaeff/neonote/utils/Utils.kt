@@ -1,18 +1,20 @@
 package android.dev.kalmurzaeff.neonote.utils
 
-import android.dev.kalmurzaeff.neonote.data.models.OnBoardData
+import android.dev.kalmurzaeff.neonote.data.model.OnBoardData
 import android.dev.kalmurzaeff.notesapp.R
 import android.icu.text.SimpleDateFormat
 import android.os.Build
-import androidx.annotation.RequiresApi
 import java.util.Date
 import java.util.Locale
 
 
-@RequiresApi(Build.VERSION_CODES.N)
 fun convertToDate(milliSeconds: Long): String {
     // Create a DateFormatter object for displaying date in specified format.
-    val formatter = SimpleDateFormat("dd-MMMM", Locale.UK)
+    val formatter = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        SimpleDateFormat("dd-MMMM", Locale.UK)
+    } else {
+        TODO("VERSION.SDK_INT < N")
+    }
     val date = Date(milliSeconds)
     return formatter.format(date)
 }

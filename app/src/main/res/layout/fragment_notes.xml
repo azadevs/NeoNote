@@ -6,7 +6,14 @@
     android:layout_height="match_parent"
     android:background="@color/gray_white"
     android:padding="4dp"
-    tools:context=".ui.list.ListNoteFragment">
+    tools:context="android.dev.kalmurzaeff.neonote.ui.list.NotesFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
 
     <androidx.recyclerview.widget.RecyclerView

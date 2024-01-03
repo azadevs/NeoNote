@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.MainActivity">
+    tools:context="android.dev.kalmurzaeff.neonote.ui.MainActivity">
 
     <fragment
         android:id="@+id/fragmentContainerView"
@@ -20,7 +20,6 @@
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-
         android:layout_gravity="start"
         app:headerLayout="@layout/fragment_header"
         app:itemIconTint="@color/nav_view_item_color_selector"

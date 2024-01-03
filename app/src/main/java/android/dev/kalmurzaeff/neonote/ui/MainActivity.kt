@@ -1,6 +1,5 @@
 package android.dev.kalmurzaeff.neonote.ui
 
-import android.dev.kalmurzaeff.neonote.data.local.NoteDatabase
 import android.dev.kalmurzaeff.notesapp.R
 import android.dev.kalmurzaeff.notesapp.databinding.ActivityMainBinding
 import android.os.Bundle
@@ -12,15 +11,13 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var navController: NavController
-
-    val database by lazy {
-        NoteDatabase.getInstance(this)
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

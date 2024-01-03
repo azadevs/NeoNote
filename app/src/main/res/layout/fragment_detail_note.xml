@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 tools:text="My task" />
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 tools:text="My task" />
 
@@ -51,7 +51,7 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="7dp"
                 android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/AntiqueWhite"
+                android:textColor="@color/black"
                 android:textSize="12sp"
                 tools:text="18-september" />
 
@@ -79,16 +79,16 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:elevation="1dp"
-        app:cardElevation="1dp"
-        app:cardCornerRadius="12dp">
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp">
 
         <ImageView
             android:id="@+id/iv_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="@string/image"
             android:scaleType="centerCrop"
-            android:src="@drawable/place_holder"
-            android:contentDescription="@string/image" />
+            android:src="@drawable/place_holder" />
 
     </androidx.cardview.widget.CardView>
 

@@ -6,27 +6,8 @@
         android:title="Home" />
 
     <item
-        android:id="@+id/settingsFragment"
-        android:icon="@drawable/ic_settings"
-        android:title="Settings" />
-
-    <item
         android:id="@+id/bookmarksFragment"
         android:icon="@drawable/ic_bookmarks"
         android:title="Bookmarks" />
 
-
-    <group
-        android:id="@+id/group_divider"
-        android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/info"
-            android:icon="@drawable/ic_info"
-            android:title="About" />
-        <item
-            android:id="@+id/rate"
-            android:icon="@drawable/ic_rate"
-            android:title="Rate" />
-    </group>
 </menu>

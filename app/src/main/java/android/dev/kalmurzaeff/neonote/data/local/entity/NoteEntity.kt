@@ -1,4 +1,4 @@
-package android.dev.kalmurzaeff.neonote.data.local
+package android.dev.kalmurzaeff.neonote.data.local.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

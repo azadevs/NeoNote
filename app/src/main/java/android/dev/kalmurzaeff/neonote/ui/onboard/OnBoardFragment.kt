@@ -1,6 +1,6 @@
 package android.dev.kalmurzaeff.neonote.ui.onboard
 
-import android.dev.kalmurzaeff.neonote.prefs.SharedPrefsManager
+import android.dev.kalmurzaeff.neonote.data.local.prefs.SharedPrefsManager
 import android.dev.kalmurzaeff.neonote.ui.MainActivity
 import android.dev.kalmurzaeff.neonote.ui.adapter.OnboardAdapter
 import android.dev.kalmurzaeff.neonote.utils.getOnBoardDataList

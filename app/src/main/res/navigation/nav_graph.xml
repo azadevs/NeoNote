@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/listNoteFragment"
-        android:name="android.dev.kalmurzaeff.neonote.ui.list.ListNoteFragment"
+        android:name="android.dev.kalmurzaeff.neonote.ui.list.NotesFragment"
         android:label="Notes"
-        tools:layout="@layout/fragment_list_notes">
+        tools:layout="@layout/fragment_notes">
         <action
             android:id="@+id/navigateToAddFragment"
             app:destination="@id/addNoteFragment" />
@@ -61,7 +61,7 @@
         android:id="@+id/fragmentOnBoarding"
         android:name="android.dev.kalmurzaeff.neonote.ui.onboard.OnBoardFragment"
         android:label="fragment_onboarding"
-        tools:layout="@layout/fragment_onboard" >
+         tools:layout="@layout/fragment_onboard" >
         <action
             android:id="@+id/action_fragmentOnBoarding_to_listNoteFragment"
             app:destination="@id/listNoteFragment"

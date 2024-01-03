@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Notes-app</string>
+    <string name="app_name">NeoNote</string>
     <string name="action_add">This is add button</string>
     <string name="close">Close</string>
     <string name="open">Open</string>

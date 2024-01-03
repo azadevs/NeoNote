@@ -1,6 +1,6 @@
 package android.dev.kalmurzaeff.neonote.ui.adapter
 
-import android.dev.kalmurzaeff.neonote.data.models.OnBoardData
+import android.dev.kalmurzaeff.neonote.data.model.OnBoardData
 import android.dev.kalmurzaeff.neonote.ui.onboard.PagerDataFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
