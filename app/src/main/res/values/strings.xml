@@ -20,4 +20,6 @@
     <string name="no_data_txt">No data</string>
     <string name="note_image_txt">Note image</string>
     <string name="color_image">Color_image</string>
+    <string name="text_home">Home</string>
+    <string name="text_bookmarks">Bookmarks</string>
 </resources>
