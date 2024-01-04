@@ -1,4 +1,4 @@
-package android.dev.kalmurzaeff.neonote.data.model
+package android.dev.kalmurzaeff.neonote.models
 
 import java.io.Serializable
 
