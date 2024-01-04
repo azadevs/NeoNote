@@ -63,7 +63,7 @@ class BookmarksFragment : Fragment(R.layout.fragment_bookmarks) {
     private fun configureAdapter() {
         adapter = NoteAdapter({ noteId ->
             val navigateToDetailFragment =
-                BookmarksFragmentDirections.actionBookmarksFragmentToDetailNoteFragment(noteId)
+                BookmarksFragmentDirections.navigateToDetailFragment(noteId)
             findNavController().navigate(navigateToDetailFragment)
         }, { note ->
             configureDeleteDialog(note)

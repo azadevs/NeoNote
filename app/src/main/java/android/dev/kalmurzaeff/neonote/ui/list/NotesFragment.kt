@@ -44,7 +44,7 @@ class NotesFragment : Fragment(R.layout.fragment_notes), SearchView.OnQueryTextL
         SharedPrefsManager.init(requireContext())
         val bool = SharedPrefsManager.readData(false)
         if (!bool) {
-            findNavController().navigate(R.id.action_listNoteFragment_to_fragmentOnBoarding)
+            findNavController().navigate(R.id.navigateToOnBoardingFragment)
         }
     }
 

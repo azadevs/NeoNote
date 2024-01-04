@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/listNoteFragment"
+        android:id="@+id/NotesFragment"
         android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:title="@string/text_home" />
 
     <item
         android:id="@+id/bookmarksFragment"
         android:icon="@drawable/ic_bookmarks"
-        android:title="Bookmarks" />
+        android:title="@string/text_bookmarks" />
 
 </menu>

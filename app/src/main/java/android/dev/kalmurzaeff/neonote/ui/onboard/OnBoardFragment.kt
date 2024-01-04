@@ -54,7 +54,7 @@ class OnBoardFragment : Fragment(R.layout.fragment_onboard) {
                     binding.btnNext.text = "Finish"
                     binding.btnNext.setOnClickListener {
                         SharedPrefsManager.writeData(true)
-                        findNavController().navigate(R.id.action_fragmentOnBoarding_to_listNoteFragment)
+                        findNavController().navigate(R.id.firstNavigateToNotesFragment)
                     }
                 } else {
                     binding.btnNext.text = "Next"

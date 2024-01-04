@@ -99,7 +99,7 @@ class UpdateNoteFragment : Fragment(R.layout.fragment_update_note) {
                 title, description, imageUri, colorPosition, System.currentTimeMillis(), args.noteId
             )
             viewModel.upsertNote(note)
-            findNavController().navigate(UpdateNoteFragmentDirections.navigateToListFragment())
+            findNavController().navigate(UpdateNoteFragmentDirections.navigateToNotesFragment())
         }
 
     }
