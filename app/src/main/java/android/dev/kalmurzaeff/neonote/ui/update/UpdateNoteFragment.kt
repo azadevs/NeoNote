@@ -44,7 +44,7 @@ class UpdateNoteFragment : Fragment(R.layout.fragment_update_note) {
             .flowWithLifecycle(viewLifecycleOwner.lifecycle)
             .filterNotNull()
             .onEach { note ->
-                setUpUi(note)
+                configureUI(note)
             }.launchIn(viewLifecycleOwner.lifecycleScope)
 
         binding.btnAdd.setOnClickListener {
@@ -63,7 +63,7 @@ class UpdateNoteFragment : Fragment(R.layout.fragment_update_note) {
 
     }
 
-    private fun setUpUi(note: NoteEntity) {
+    private fun configureUI(note: NoteEntity) {
         binding.titleEdt.setText(note.title)
         binding.descriptionEdt.setText(note.description)
         if (note.imageUri != null && !TextUtils.isEmpty(note.imageUri)) {
@@ -71,7 +71,7 @@ class UpdateNoteFragment : Fragment(R.layout.fragment_update_note) {
             binding.ivDelete.visibility = View.VISIBLE
         }
 
-        setUpColorRecyclerView(note.colorPosition)
+        configureAdapter(note.colorPosition)
 
         colorPosition = note.colorPosition
         imageUri = note.imageUri
@@ -99,13 +99,12 @@ class UpdateNoteFragment : Fragment(R.layout.fragment_update_note) {
                 title, description, imageUri, colorPosition, System.currentTimeMillis(), args.noteId
             )
             viewModel.upsertNote(note)
-
             findNavController().navigate(UpdateNoteFragmentDirections.navigateToListFragment())
         }
 
     }
 
-    private fun setUpColorRecyclerView(selectedPosition: Int) {
+    private fun configureAdapter(selectedPosition: Int) {
         colorAdapter = ColorAdapter(colors()) { position ->
             colorPosition = position
         }

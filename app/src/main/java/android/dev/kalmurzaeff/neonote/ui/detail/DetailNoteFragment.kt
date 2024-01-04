@@ -43,14 +43,14 @@ class DetailNoteFragment : Fragment(R.layout.fragment_detail_note) {
             .flowWithLifecycle(viewLifecycleOwner.lifecycle)
             .filterNotNull()
             .onEach { note ->
-                setUpUi(note)
+                configureUI(note)
             }.launchIn(viewLifecycleOwner.lifecycleScope)
 
         onCreateMenu()
 
     }
 
-    private fun setUpUi(note: NoteEntity) {
+    private fun configureUI(note: NoteEntity) {
         binding.tvTitle.text = note.title
         binding.tvDescription.text = note.description
         binding.tvDate.text = convertToDate(note.date)

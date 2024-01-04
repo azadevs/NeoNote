@@ -52,7 +52,7 @@ class NotesFragment : Fragment(R.layout.fragment_notes), SearchView.OnQueryTextL
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentNotesBinding.bind(view)
 
-        configureRecyclerView()
+        configureAdapter()
 
         onCreateMenu()
 
@@ -90,7 +90,7 @@ class NotesFragment : Fragment(R.layout.fragment_notes), SearchView.OnQueryTextL
             }.launchIn(viewLifecycleOwner.lifecycleScope)
     }
 
-    private fun configureRecyclerView() {
+    private fun configureAdapter() {
         adapter = NoteAdapter({ noteId ->
             val navigateToDetailFragment =
                 NotesFragmentDirections.navigateToDetailFragment(noteId)
