@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray_white"
     android:orientation="vertical"
-    tools:context=".ui.detail.DetailNoteFragment">
+    tools:context="android.dev.kalmurzaeff.neonote.ui.detail.DetailNoteFragment">
 
 
     <androidx.cardview.widget.CardView

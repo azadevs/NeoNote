@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.onboard.OnBoardFragment">
+    tools:context="android.dev.kalmurzaeff.neonote.ui.onboard.OnBoardFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp_onBoarding"

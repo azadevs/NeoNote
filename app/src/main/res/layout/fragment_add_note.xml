@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray_white"
     android:orientation="vertical"
-    tools:context=".ui.add.AddNoteFragment">
+    tools:context="android.dev.kalmurzaeff.neonote.ui.add.AddNoteFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
