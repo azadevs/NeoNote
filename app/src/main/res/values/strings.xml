@@ -22,4 +22,5 @@
     <string name="color_image">Color_image</string>
     <string name="text_home">Home</string>
     <string name="text_bookmarks">Bookmarks</string>
+    <string name="text_finish">Finish</string>
 </resources>

@@ -1,7 +1,7 @@
 package android.dev.kalmurzaeff.neonote.ui.onboard
 
 import android.dev.kalmurzaeff.neonote.data.local.prefs.SharedPrefsManager
-import android.dev.kalmurzaeff.neonote.ui.MainActivity
+import android.dev.kalmurzaeff.neonote.ui.NoteActivity
 import android.dev.kalmurzaeff.neonote.ui.adapter.OnboardAdapter
 import android.dev.kalmurzaeff.neonote.utils.getOnBoardDataList
 import android.dev.kalmurzaeff.notesapp.R
@@ -19,7 +19,7 @@ class OnBoardFragment : Fragment(R.layout.fragment_onboard) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        (activity as MainActivity).supportActionBar?.hide()
+        (activity as NoteActivity).supportActionBar?.hide()
         SharedPrefsManager.init(requireContext())
 
 
@@ -51,13 +51,13 @@ class OnBoardFragment : Fragment(R.layout.fragment_onboard) {
 
             override fun onPageSelected(position: Int) {
                 if (position > 1) {
-                    binding.btnNext.text = "Finish"
+                    binding.btnNext.text = getString(R.string.text_finish)
                     binding.btnNext.setOnClickListener {
                         SharedPrefsManager.writeData(true)
                         findNavController().navigate(R.id.firstNavigateToNotesFragment)
                     }
                 } else {
-                    binding.btnNext.text = "Next"
+                    binding.btnNext.text = getString(R.string.next_btn)
                 }
             }
 
@@ -70,7 +70,7 @@ class OnBoardFragment : Fragment(R.layout.fragment_onboard) {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        (activity as MainActivity).supportActionBar?.show()
+        (activity as NoteActivity).supportActionBar?.show()
         _binding = null
     }
 }
