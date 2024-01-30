@@ -1,4 +1,4 @@
-package android.dev.kalmurzaeff.neonote.app
+package android.dev.kalmurzaeff.neonote.application
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
@@ -9,4 +9,4 @@ import dagger.hilt.android.HiltAndroidApp
  */
 
 @HiltAndroidApp
-class App : Application()
+class NoteApplication : Application()

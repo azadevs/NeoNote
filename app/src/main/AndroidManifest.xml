@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name="android.dev.kalmurzaeff.neonote.app.App"
+        android:name="android.dev.kalmurzaeff.neonote.application.NoteApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Notesapp"
         tools:targetApi="31">
         <activity
-            android:name="android.dev.kalmurzaeff.neonote.ui.MainActivity"
+            android:name="android.dev.kalmurzaeff.neonote.ui.NoteActivity"
             android:exported="true"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan">
