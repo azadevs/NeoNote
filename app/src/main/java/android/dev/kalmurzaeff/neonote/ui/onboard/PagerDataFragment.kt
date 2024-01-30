@@ -1,6 +1,5 @@
 package android.dev.kalmurzaeff.neonote.ui.onboard
 
-import android.dev.kalmurzaeff.neonote.models.OnBoardData
 import android.dev.kalmurzaeff.notesapp.R
 import android.dev.kalmurzaeff.notesapp.databinding.FragmentPagerDataBinding
 import android.os.Build

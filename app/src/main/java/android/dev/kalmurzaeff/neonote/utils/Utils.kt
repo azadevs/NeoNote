@@ -1,6 +1,6 @@
 package android.dev.kalmurzaeff.neonote.utils
 
-import android.dev.kalmurzaeff.neonote.models.OnBoardData
+import android.dev.kalmurzaeff.neonote.ui.onboard.OnBoardData
 import android.dev.kalmurzaeff.notesapp.R
 import android.icu.text.SimpleDateFormat
 import android.os.Build
