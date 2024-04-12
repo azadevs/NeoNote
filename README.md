@@ -9,11 +9,11 @@ Welcome to NeoNote-app! This is a modern note-taking application built for Andro
 <img src="https://imgur.com/leVomQV.png" width="250"> <img src="https://imgur.com/OnAgv75.png" width="250">
 
 ## Features
-- Create
-- Edit
-- Delete
-- Search
-- Bookmark
+- Create notes
+- Edit notes
+- Delete notes
+- Search notes
+- Save favourite notes
   
 ---
 
