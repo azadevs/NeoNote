@@ -19,6 +19,9 @@ Welcome to NeoNote-app! This is a modern note-taking application built for Andro
 
 ## Architecture
 Note-App follows the MVVM (Model-View-ViewModel) architectural pattern, utilizing Android Architecture Components for robust and maintainable app structure.
+<p align="center">
+<img src="https://th.bing.com/th/id/OIP.RboNE1JcU4rpMKiEA-4mAgHaFj?rs=1&pid=ImgDetMain.png"  />  
+</p>
 
 ---
 
@@ -47,7 +50,7 @@ Note-App follows the MVVM (Model-View-ViewModel) architectural pattern, utilizin
 ### Glide
 - **Description**: Glide is a fast and efficient open-source library for loading and displaying images in Android applications. It offers advanced features for image loading, caching, and transformations.
 - **Link**: [Glide GitHub Repository](https://github.com/bumptech/glide)
-- 
+  
 ---
 
 ## Getting Started
