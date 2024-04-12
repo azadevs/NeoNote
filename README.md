@@ -59,8 +59,3 @@ Follow these steps to set up and run Note-App on your local machine:
 1. Clone this repository.
 2. Open the project in Android Studio.
 3. Build and run the app on an Android device or emulator.
-
----
-
-## Contact
-For any inquiries or feedback, please contact [Azamat Kalmurzayev](@codingwithme28@gmail.com).
